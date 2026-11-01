@@ -1,0 +1,28 @@
+{
+  "name": "smartfarm-arecanut-irrigation",
+  "version": "1.0.0",
+  "description": "Smart Irrigation Management System for Sloping Arecanut Plantations with 3-Zone Slope Monitoring and Multilingual Voice Support",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js",
+    "test": "node backend/tests/api.test.js"
+  },
+  "keywords": [
+    "smart-agriculture",
+    "irrigation",
+    "arecanut",
+    "sloping-land",
+    "iot",
+    "esp32",
+    "kannada",
+    "hindi",
+    "multilingual"
+  ],
+  "author": "SmartFarm Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}
