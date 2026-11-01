@@ -1,5 +1,5 @@
 /**
- * ESP32 Telemetry Ingestion Route
+ * ESP8266 Telemetry Ingestion Route
  * Ingests moisture readings, flow meters, and runoff float/capacitive sensors.
  * Implements server-side slope safety guard: auto-interlocks on downhill runoff.
  */
@@ -46,7 +46,7 @@ router.post('/', (req, res) => {
     runoffDetected: !!runoffDetected,
     sensorValid: sensorValid !== false,
     timestamp: new Date().toISOString(),
-    source: req.headers['x-esp32-device'] ? 'esp32_hardware' : 'api_client'
+    source: req.headers['x-esp8266-device'] ? 'esp8266_hardware' : 'api_client'
   });
 
   // Safety Interlock Check
@@ -70,7 +70,7 @@ router.post('/', (req, res) => {
     });
   }
 
-  // Return desired valve state for this zone to the ESP32
+  // Return desired valve state for this zone to the ESP8266
   const updatedZone = db.getZoneById(zoneId);
   res.json({
     status: "received",

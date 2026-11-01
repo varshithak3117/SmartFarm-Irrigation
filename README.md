@@ -34,7 +34,7 @@ The system supports **any number of separate agricultural lands** across differe
 | **Rule-Based Smart Recommendations** | Transparent recommendations based on slope physics, moisture disparity, and rain outlook. |
 | **Complete Multilingual Support** | Full native translations for **Kannada (ಕನ್ನಡ)**, **Hindi (हिंदी)**, and **English**. |
 | **SpeechSynthesis Voice Alerts** | Spoken audio announcements in Kannada (`kn-IN`), Hindi (`hi-IN`), and English (`en-IN`). |
-| **Demo Mode & Live ESP32 Firmware** | Complete simulation engine for browser testing + production ESP32 Arduino sketch for real hardware. |
+| **Demo Mode & Live ESP8266 Firmware** | Complete simulation engine for browser testing + production ESP8266 Arduino sketch for real hardware. |
 
 ---
 
@@ -81,12 +81,12 @@ Includes deduplication cooldowns (prevents alert spam), user toggle, and safety 
 
 ---
 
-## 🛠️ Hardware Integration (ESP32)
+## 🛠️ Hardware Integration (ESP8266)
 
-The firmware sketch is located at [`firmware/SmartFarm_ESP32.ino`](file:///c:/Users/varsh/Downloads/SmartFarm%20%231/firmware/SmartFarm_ESP32.ino):
-- Reads 3 Capacitive Soil Moisture Sensors (ADC pins GPIO 34, 35, 32).
-- Controls 3 Solenoid Relays (GPIO 25, 26, 27).
-- Monitors runoff sensor (GPIO 14) and water flow meter (GPIO 13).
+The firmware sketch is located at [`firmware/SmartFarm_ESP8266.ino`](file:///c:/Users/varsh/Downloads/SmartFarm%20%231/firmware/SmartFarm_ESP8266.ino):
+- Reads 3 capacitive soil moisture sensors through an analog multiplexer on A0.
+- Controls 3 solenoid relays on D1, D2, and D3.
+- Monitors the runoff sensor on D8 and water flow meter on D7.
 - Features a **local hardware watchdog**: if Wi-Fi disconnects or runoff occurs, relays shut off locally to safeguard the plantation.
 
 See [`firmware/README.md`](file:///c:/Users/varsh/Downloads/SmartFarm%20%231/firmware/README.md) and [`docs/HARDWARE_SETUP.md`](file:///c:/Users/varsh/Downloads/SmartFarm%20%231/docs/HARDWARE_SETUP.md) for detailed wiring schematics and calibration steps.
@@ -128,13 +128,13 @@ SmartFarm/
 │   ├── db.js                 # Structured JSON database with atomic transactions
 │   ├── routes/
 │   │   ├── lands.js          # Multi-land & 3-zone CRUD routes
-│   │   ├── telemetry.js      # ESP32 sensor ingestion & safety route
+│   │   ├── telemetry.js      # ESP8266 sensor ingestion & safety route
 │   │   ├── irrigation.js     # Valve command & interlock route
 │   │   └── alerts.js         # Alerts management route
 │   └── tests/
 │       └── api.test.js       # Automated validation test suite
 ├── firmware/
-│   ├── SmartFarm_ESP32.ino   # Complete ESP32 Arduino C++ firmware
+│   ├── SmartFarm_ESP8266.ino   # Complete ESP8266 Arduino C++ firmware
 │   └── README.md             # Pinouts, wiring diagram, calibration
 ├── docs/
 │   ├── API.md                # Comprehensive REST API reference

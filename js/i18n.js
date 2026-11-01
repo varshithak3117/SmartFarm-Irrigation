@@ -86,8 +86,8 @@ const I18N = {
       runoffWarning: "Erosion Risk Detected",
       sensorOnline: "Sensor Online",
       sensorOffline: "Sensor Disconnected",
-      controllerOnline: "ESP32 Online",
-      controllerOffline: "ESP32 Offline",
+      controllerOnline: "ESP8266 Online",
+      controllerOffline: "ESP8266 Offline",
 
       // Land Details
       location: "Location",
@@ -173,7 +173,7 @@ const I18N = {
       voiceEnabled: "Enable Voice Alerts",
       voiceTestBtn: "Test Voice Alert",
       voiceLanguage: "Voice Language Tag",
-      hardwareApiEndpoint: "Backend / ESP32 Endpoint",
+      hardwareApiEndpoint: "Backend / ESP8266 Endpoint",
       simulationSpeed: "Demo Simulation Speed",
       saveSettingsBtn: "Save Preferences",
 
@@ -202,7 +202,7 @@ const I18N = {
       welcomeFarmer: "ಸ್ವಾಗತ, ರೈತ ಮಿತ್ರರೇ",
       welcomeSubtitle: "ನಿಮ್ಮ ಅಡಿಕೆ ತೋಟಗಳ ಇಳಿಜಾರಿನ ತೇವಾಂಶ ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ, ನೀರು ಉಳಿಸಿ ಮತ್ತು ಮಣ್ಣಿನ ಸವೆತ ತಡೆಯಿರಿ",
       demoBadge: "ಡೆಮೊ ಮೋಡ್ (ಸಿಮ್ಯುಲೇಶನ್)",
-      liveBadge: "ಲೈವ್ ಯಂತ್ರಾಂಶ (Live ESP32)",
+      liveBadge: "ಲೈವ್ ಯಂತ್ರಾಂಶ (Live ESP8266)",
       demoNotice: "ಸಿಮ್ಯುಲೇಶನ್ ಸಕ್ರಿಯವಾಗಿದೆ: ಇಳಿಜಾರಿನ ಗುರುತ್ವಾಕರ್ಷಣೆಯ ನೀರು ಹರಿವು ಮತ್ತು ಸೆನ್ಸರ್ ಅಂಕಿಅಂಶಗಳು ನಕಲಿ ಮಾದರಿಯಾಗಿದೆ.",
       
       // Nav
@@ -275,8 +275,8 @@ const I18N = {
       runoffWarning: "ಮಣ್ಣಿನ ಸವೆತದ ಎಚ್ಚರಿಕೆ",
       sensorOnline: "ಸೆನ್ಸರ್ ಆನ್‌ಲೈನ್",
       sensorOffline: "ಸೆನ್ಸರ್ ಸಂಪರ್ಕ ಕಡಿತ",
-      controllerOnline: "ESP32 ಸಂಪರ್ಕದಲ್ಲಿದೆ",
-      controllerOffline: "ESP32 ಆಫ್‌ಲೈನ್",
+      controllerOnline: "ESP8266 ಸಂಪರ್ಕದಲ್ಲಿದೆ",
+      controllerOffline: "ESP8266 ಆಫ್‌ಲೈನ್",
 
       // Land Details
       location: "ಸ್ಥಳ",
@@ -362,7 +362,7 @@ const I18N = {
       voiceEnabled: "ಧ್ವನಿ ಎಚ್ಚರಿಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ",
       voiceTestBtn: "ಧ್ವನಿ ಪರೀಕ್ಷಿಸಿ (Test Voice)",
       voiceLanguage: "ಧ್ವನಿ ಭಾಷಾ ಟ್ಯಾಗ್",
-      hardwareApiEndpoint: "ಬ್ಯಾಕೆಂಡ್ / ESP32 ಸಂಪರ್ಕ ವಿಳಾಸ",
+      hardwareApiEndpoint: "ಬ್ಯಾಕೆಂಡ್ / ESP8266 ಸಂಪರ್ಕ ವಿಳಾಸ",
       simulationSpeed: "ಸಿಮ್ಯುಲೇಶನ್ ವೇಗ",
       saveSettingsBtn: "ಆಯ್ಕೆಗಳನ್ನು ಉಳಿಸಿ",
 
@@ -391,7 +391,7 @@ const I18N = {
       welcomeFarmer: "स्वागत है, किसान मित्र",
       welcomeSubtitle: "ढलानों पर नमी की निगरानी करें, पानी बचाएं और मिट्टी का कटाव रोकें",
       demoBadge: "डेमो मोड (सिम्युलेटेड)",
-      liveBadge: "लाइव हार्डवेयर (Live ESP32)",
+      liveBadge: "लाइव हार्डवेयर (Live ESP8266)",
       demoNotice: "सिमुलेशन सक्रिय है: ढलान पर पानी का बहाव और सेंसर डेटा सिम्युलेट किया गया है।",
       
       // Nav
@@ -464,8 +464,8 @@ const I18N = {
       runoffWarning: "कटाव का जोखिम",
       sensorOnline: "सेंसर ऑनलाइन",
       sensorOffline: "सेंसर डिस्कनेक्ट",
-      controllerOnline: "ESP32 ऑनलाइन",
-      controllerOffline: "ESP32 ऑफलाइन",
+      controllerOnline: "ESP8266 ऑनलाइन",
+      controllerOffline: "ESP8266 ऑफलाइन",
 
       // Land Details
       location: "स्थान",
@@ -551,7 +551,7 @@ const I18N = {
       voiceEnabled: "ध्वनि अलर्ट सक्षम करें",
       voiceTestBtn: "ध्वनि परीक्षण (Test Voice)",
       voiceLanguage: "ध्वनि भाषा टैग",
-      hardwareApiEndpoint: "बैकएंड / ESP32 एंडपॉइंट",
+      hardwareApiEndpoint: "बैकएंड / ESP8266 एंडपॉइंट",
       simulationSpeed: "सिमुलेशन गति",
       saveSettingsBtn: "प्राथमिकताएं सहेजें",
 
